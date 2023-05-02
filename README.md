@@ -1,1 +1,3 @@
-# Richard_Oh_Ellen_Ko_EE_250_Final_Project
+Team members: Richard Oh, Ellen Ko
+Instructions:
+External Libraries used:
