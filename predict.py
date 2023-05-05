@@ -9,9 +9,9 @@ app = Flask(__name__)
 
 @app.route("/classify")
 def hello_world():
-    temperature = float(request.args.get('w'))
-    humidity = float(request.args.get('r'))
+    humidity = float(request.args.get('w'))
+    pressure = float(request.args.get('r'))
 
-    label = int(clf.predict([[temperature, humidity]])[0])
-    #print(label)
-    return json.dumps({"temperature":temperature, "humidity":humidity ,"label":label})
+    clearness = int(clf.predict([[humidity,pressure]])[0])
+    #print(clearness)
+    return json.dumps({"humidity":humidity, "pressure":pressure ,"clearness":clearness})
